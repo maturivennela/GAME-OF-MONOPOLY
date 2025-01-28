@@ -1,0 +1,44 @@
+Algorithm/Steps:
+1. Initialize Game:
+• Construct a list that replicates the Monopoly board with properties, utilities, and
+unique space such as "Chance" or "Community Chest."
+• Initialize Player Attributes: Starting amount of money, current position on the
+board, and possession of different properties.
+2. Player Movements:
+• Simulate roll of two dice for each player and move him/her forward based upon
+sum rolled.
+• Upon landing on a property:
+o If it is an unowned property, use the decision-making function that determines
+whether to purchase it or not and must consider the cash available and expected
+returns in terms of rent.
+now If the property is owned by some other player, then the player has to pay his
+rent in accordance with the value of the rent of the property.
+3. Decision-Making Function:
+For each turn, determine the following:
+no Buy property but consider all conditions from the cash in hand, possible income
+from rent as well as strategic value of having properties in a specific color group.
+no Sell or mortgage property when the players' cash reserves are at dangerously
+low levels, if for example to make some new rent payments to not have to declare
+bankruptcy.
+no Trade with other players to complete color sets or cash in on improved cash
+flow.
+No Construct houses or hotels on the properties if a player owns all of the
+properties in a color group; consider construction costs versus additional revenue
+when collecting rents.
+4. Include Probability Computation:
+• Determine the probability of landing on each property based on the number of
+steps from a specific player's current position and locations on the board that the
+player is most likely to visit, such as railroads.
+• Attach these probabilities to find out how much the bid for purchasing each one of
+the houses would be.
+5. Recursive Simulations:
+• Repeat steps 2 to 4 for all players and play turn after turn until one player wins
+because of the bankruptcy of the other players.
+• Note down the net worth of the players, houses they own, and cash the player
+holds, and it will result in which player has won.
+6. Strategy Analysis
+• Play a few games under different strategies, such as buying more properties, and
+avoid accumulating much cash.
+• Compare the results from multiple games. Will a pattern emerge that results in a
+better performance for comparing which strategy has a higher probable winning
+chance.
